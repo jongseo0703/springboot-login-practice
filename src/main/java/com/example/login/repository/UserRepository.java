@@ -1,9 +1,10 @@
 package com.example.login.repository;
 
-import com.example.login.domain.User;
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Optional;
+import com.example.login.domain.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
   Optional<User> findByLoginId(String loginId);

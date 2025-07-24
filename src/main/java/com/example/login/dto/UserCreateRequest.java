@@ -6,10 +6,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UserCreateRequest {
-  //아이디
+  // 아이디
   private String loginId;
-  //비번
+  // 비번
   private String password;
-  //닉네임
+  // 닉네임
   private String name;
 }
